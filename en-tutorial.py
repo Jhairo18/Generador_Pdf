@@ -21,4 +21,4 @@ output_text = template.render(context)
 
 #config = pdfkit.configuration(wkhtmltopdf='C:/Program Files/wkhtmltopdf/bin/')
 output_pdf = 'pdf_generated.pdf'
-pdfkit.from_string(output_text, 'pdf_generated.pdf')
+pdfkit.from_string(output_text, 'pdf_generated.pdf',css='my-styles.css')
